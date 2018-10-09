@@ -1,0 +1,17 @@
+html,body,div,a,span,img,h1,h2,h3,h4,h5,h6,ul,li,p,button,input {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+em,i {
+	font-style: normal;
+}
+ul {
+	list-style: none;
+}
+table.table {
+	width: 92%;
+}
+table.table > tr{
+	border: 0;
+}

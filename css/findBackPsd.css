@@ -1,0 +1,113 @@
+.findBackPsd {
+	position: relative;
+	width: 100%;
+	height: 768px;
+	background: url(../img/findBackPsdBg.png) no-repeat 0/cover;
+}
+/*找回密码框*/
+.findBackPsd_box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 464px;
+	height: 370px;
+	background-color: #fff;
+	border-radius: 6px;
+	padding-top: 18px;
+}
+.findBackPsd_box img {
+	display: block;
+	margin: 0 auto;
+}
+.findBackPsd_box h2 {
+	font-size: 15px;
+	color: #4c545a;
+	text-align: center;
+	line-height: 43px;
+}
+.findBackPsd_box p {
+	text-align: center;
+	font-size: 16px;
+	color: #3eb8fe;
+	line-height: 0;
+}
+.findBackPsd_box p span {
+	padding: 0 5px;
+}
+.findBackPsd_box p::before {
+	display: inline-block;
+	width: 11px;
+	height: 8px;
+	content: '';
+	background: url(../img/decorate.png) no-repeat;
+}
+.findBackPsd_box p::after {
+	display: inline-block;
+	width: 11px;
+	height: 8px;
+	content: '';
+	background: url(../img/decorate.png) no-repeat;
+}
+.findBackPsd_box input {
+	display: block;
+	width: 301px;
+	height: 34px;
+	background-color: #f3faff;
+	border: 2px solid #ebf6ff;
+	border-radius: 34px;
+	margin: 17px auto 18px auto;
+	outline: none;
+}
+.findBackPsd_box input.num {
+	padding: 0 11px;
+}
+.findBackPsd_box input.psd {
+	padding: 0 13px;
+}
+::-webkit-input::placeholder {
+	color: #516676;
+	font-size: 14px;
+}
+.btns {
+	width: 305px;
+	height: 34px;
+	margin: 0 auto;
+}
+.btn {
+	width: 146px;
+	height: 34px;
+	border-radius: 34px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	color: #fff;
+}
+.btnL {
+	float: left;
+	background-image: linear-gradient(to right,#30c2fe,#30a3fe);
+	box-shadow: 0 3px 14px #30c1fe;
+}
+.btnR {
+	float: right;
+	background-image: linear-gradient(to right,#37e06f,#32d69a);
+	box-shadow: 0 3px 14px #37df74;
+}
+/*找回密码底部*/
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1ab0ff;
+	text-align: center;
+	line-height: 60px;
+	color: #8dd7ff;
+	font-size: 12px;
+}

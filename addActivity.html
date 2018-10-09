@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>添加商铺活动</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/addActivity.css">
+</head>
+<body>
+	<div class="homePage">
+		<!-- 左侧 -->
+		<div class="homePageL">
+			<img src="./img/logo.png" class="img">
+			<h2>晋彤商家管理系统</h2>
+			<ul>
+				<li><img src="./img/list_select.png">店铺信息</li>
+				<li><img src="./img/list_notSelect.png">店铺图片设置</li>
+				<li class="active"><img src="./img/list_notSelect.png">店铺活动</li>
+				<li><img src="./img/list_notSelect.png">优惠卷管理</li>
+				<li><img src="./img/list_notSelect.png">咨询管理</li>
+			</ul>
+		</div>
+		<!-- 右侧 -->
+		<div class="homePageR">
+			<!-- 导航 -->
+			<div class="r_nav">
+				<div class="r_nav_l">
+					<a href="#">首页</a>
+					<a href="#">商品管理</a>
+					<a href="#">订单管理</a>
+					<a href="#"  class="active">店铺管理</a>
+					<a href="#">账户管理</a>
+					<a href="#">数据统计</a>
+				</div>
+				<div class="r_nav_r">
+					<a href="#">
+						<img src="./img/exit.png" width="17" height="19">
+						<span>退出</span>
+					</a>
+					<a href="#">
+						<img src="./img/clear.png" width="17" height="18">
+						<span>清除缓存</span>
+					</a>
+					<a href="#">
+						<img src="./img/admin.png">
+						<span>店长admin</span>
+					</a>
+				</div>
+			</div>
+			<!-- 主要内容 -->
+			<div class="container">	
+				<h2>店铺管理<span></span>店铺活动<span></span><em>添加店铺活动</em></h2>
+				<!-- *店铺活动名称 -->
+				<h5 class="detail_info">
+					<span class="small_title">*店铺活动名称</span>
+					<input type="text" name="" class="detail_input storeName" placeholder="名称可输入20个字符，支持输入中文、字母、数字、_、/、-和小数点">
+				</h5>
+				<!-- *优惠起止时间 -->
+				<h5 class="detail_info">
+					<span class="small_title">*优惠起止时间</span>
+					<input type="text" name="" class="detail_input time" placeholder="2018-06-01  14:04:53">
+					&nbsp;&nbsp;~&nbsp;&nbsp;
+					<input type="text" name="" class="detail_input time" placeholder="2018-06-01  14:04:53">
+				</h5>
+				<!-- *折扣 -->
+				<h5 class="detail_info">
+					<span class="small_title">*折扣</span>
+					<input type="text" name="" class="detail_input" placeholder="输入折扣">
+				</h5>
+				<!-- *使用范围 -->
+				<h5 class="detail_info range">
+					<span class="small_title">*使用范围</span>
+					<ul class="category">
+						<li>
+							<ul class="category_sub">
+								<li class="title"><h3>请选择<span>第一级类别</span></h3></li>
+								<li class="active">
+									<span></span>
+									水
+								</li>
+								<li>
+									<span></span>
+									卫浴
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<a href="#" class="top"><span></span></a>
+							<a href="#" class="bottom"><span></span></a>
+						</li>
+						<li class="pointer">
+							<img src="./img/pointer.png">
+						</li>
+						<li>
+							<ul class="category_sub">
+								<li class="title"><h3>请选择<span>第二级类别</span></h3></li>
+								<li class="active">
+									<span></span>
+									浴室柜3423
+								</li>
+								<li>
+									<span></span>
+									晾衣架5624
+								</li>
+								<li>
+									<span></span>
+									花洒
+								</li>
+								<li>
+									<span></span>
+									坐便器
+								</li>
+								<li>
+									<span></span>
+									洁具陶瓷盆
+								</li>
+								<li>
+									<span></span>
+									其它
+								</li>
+							</ul>
+							<a href="#" class="top"><span></span></a>
+							<a href="#" class="bottom"><span></span></a>
+						</li>
+					</ul>
+				</h5>
+				
+				<!-- 下一步 -->
+				<div class="btns">
+					<button>发布活动</button>
+					<button>重置</button>
+				</div>
+				<!-- 底部 -->
+				<div class="footer">
+					<span>©2015-2018 dscmall.cn&nbsp;&nbsp;</span>
+					<span>版权所有ICP备案号：</span>
+					<span>DSC00000249 POWERED</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

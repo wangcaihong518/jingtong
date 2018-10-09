@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>商品列表</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/glyphicons-halflings-regular.eot">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/commodity.css">
+</head>
+<body>
+	<div class="homePage">
+		<!-- 左侧 -->
+		<div class="homePageL">
+			<img src="./img/logo.png" class="img">
+			<h2>晋彤商家管理系统</h2>
+			<ul>
+				<li class="active"><img src="./img/list_select.png">商品列表</li>
+				<li><img src="./img/list_notSelect.png">分类管理</li>
+				<li><img src="./img/list_notSelect.png">用户评价</li>
+			</ul>
+		</div>
+		<!-- 右侧 -->
+		<div class="homePageR">
+			<!-- 导航 -->
+			<div class="r_nav">
+				<div class="r_nav_l">
+					<a href="#">首页</a>
+					<a href="#" class="active">商品管理</a>
+					<a href="#">订单管理</a>
+					<a href="#">店铺管理</a>
+					<a href="#">账户管理</a>
+					<a href="#">数据统计</a>
+				</div>
+				<div class="r_nav_r">
+					<a href="#">
+						<img src="./img/exit.png" width="17" height="19">
+						<span>退出</span>
+					</a>
+					<a href="#">
+						<img src="./img/clear.png" width="17" height="18">
+						<span>清除缓存</span>
+					</a>
+					<a href="#">
+						<img src="./img/admin.png">
+						<span>店长admin</span>
+					</a>
+				</div>
+			</div>
+			<!-- 主要内容 -->
+			<div class="container1">	
+				<h2>商品管理<span></span><em>商品列表</em></h2>
+				<!-- 商品分类 -->
+				<div class="classify">
+					<span>分类</span>
+					<span class="select">全部分类<img src="./img/xiala.png" width="20" height="20"></span>
+					<span>上下架</span>
+					<span class="select all">全部<img src="./img/xiala.png" width="20" height="20"></span>
+					<span>商品编号</span>
+					<input type="text" name="" placeholder="请输入订单号">
+					<span>商品编号</span>
+					<input type="text" name="" placeholder="请输入商品编号/关键字" class="input">
+					<img src="./img/search.png" width="32" height="32">
+					<button>添加商品</button>
+				</div>
+				<!-- 全部商品 -->
+				<div class="all_com">
+					<a href="#" class="active">全部商品（2）</a>
+					<a href="#">回收站（1）</a>
+					<a href="#">上架（1）</a>
+					<a href="#">下架（1）</a>
+				</div>
+				<div class="container">
+					<table class="table">
+						<tr>
+							<td>编号</td>
+							<td>商品名称</td>
+							<td>价格/折扣价</td>
+							<td>分类</td>
+							<td>上下架</td>
+							<td>发布时间</td>
+							<td>操作</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="./img/num.png" width="14" height="14">
+								239874983289
+							</td>
+							<td>
+								<div class="left"></div>
+								<div class="right"></div>
+							</td>
+							<td>288.00</td>
+							<td>洗衣</td>
+							<td>
+								<img src="./img/putaway.png">
+							</td>
+							<td>119.99</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="./img/num.png" width="14" height="14">
+								239874983289
+							</td>
+							<td>
+								<div class="left"></div>
+								<div class="right"></div>
+							</td>
+							<td>288.00</td>
+							<td>洗衣</td>
+							<td>
+								<img src="./img/putaway.png">
+							</td>
+							<td>119.99</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="./img/num.png" width="14" height="14">
+								239874983289
+							</td>
+							<td>
+								<div class="left"></div>
+								<div class="right"></div>
+							</td>
+							<td>288.00</td>
+							<td>洗衣</td>
+							<td>
+								<img src="./img/putaway.png">
+							</td>
+							<td>119.99</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="./img/num.png" width="14" height="14">
+								239874983289
+							</td>
+							<td>
+								<div class="left"></div>
+								<div class="right"></div>
+							</td>
+							<td>288.00</td>
+							<td>洗衣</td>
+							<td>
+								<img src="./img/putaway.png">
+							</td>
+							<td>119.99</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="./img/num.png" width="14" height="14">
+								239874983289
+							</td>
+							<td class=flex>
+								<img src="./img/img.png">
+								<div class="right">
+									<p>货号：
+										<span>DSV0002</span>
+									</p>
+									<p>羽绒服清洗</p>
+									<p>运费：
+										<span>按固定运费</span>
+									</p>
+								</div>
+							</td>
+							<td>288.00</td>
+							<td>洗衣</td>
+							<td>
+								<img src="./img/putaway.png">
+							</td>
+							<td>119.99</td>
+							<td>查看</td>
+						</tr>
+					</table>
+				</div>
+				<div class="week_vol_sort_more">
+					<div class="left">
+						<img src="./img/save.png" width="18" height="18">
+						<span>全选</span>
+						<button class="first">批量删除</button>
+						<button class="second">导出表格</button>
+						<button class="third">导出图片</button>
+					</div>
+					<div class="right">
+						<p>
+							<a href="#">
+								总计<span>206</span>记录
+							</a>
+							<a href="#" class="same">
+								分<span>82</span>页
+							</a>
+							<a href="#" class="same">
+								每页<span>15</span>
+							</a>
+						</p>
+						<p>
+							<button>首页</button>
+							<span>&lt;</span>
+							<span>1</span>
+							<span>2</span>
+							<span class="active">3</span>
+							<span>4</span>
+							<span>5</span>
+							<span>&gt;</span>
+							<button>末页</button>
+						</p>
+					</div>
+				</div>
+				<!-- 首页底部 -->
+				<div class="footer">
+					<span>©2015-2018 dscmall.cn&nbsp;&nbsp;</span>
+					<span>版权所有ICP备案号：</span>
+					<span>DSC00000249 POWERED</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

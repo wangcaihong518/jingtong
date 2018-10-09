@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>商品添加2</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/add2.css">
+</head>
+<body>
+	<div class="homePage">
+		<!-- 左侧 -->
+		<div class="homePageL">
+			<img src="./img/logo.png" class="img">
+			<h2>晋彤商家管理系统</h2>
+			<ul>
+				<li class="active"><img src="./img/list_select.png">商品列表</li>
+				<li><img src="./img/list_notSelect.png">分类管理</li>
+				<li><img src="./img/list_notSelect.png">用户评价</li>
+			</ul>
+		</div>
+		<!-- 右侧 -->
+		<div class="homePageR">
+			<!-- 导航 -->
+			<div class="r_nav">
+				<div class="r_nav_l">
+					<a href="#">首页</a>
+					<a href="#" class="active">商品管理</a>
+					<a href="#">订单管理</a>
+					<a href="#">店铺管理</a>
+					<a href="#">账户管理</a>
+					<a href="#">数据统计</a>
+				</div>
+				<div class="r_nav_r">
+					<a href="#">
+						<img src="./img/exit.png" width="17" height="19">
+						<span>退出</span>
+					</a>
+					<a href="#">
+						<img src="./img/clear.png" width="17" height="18">
+						<span>清除缓存</span>
+					</a>
+					<a href="#">
+						<img src="./img/admin.png">
+						<span>店长admin</span>
+					</a>
+				</div>
+			</div>
+			<!-- 主要内容 -->
+			<div class="container">	
+				<h2>商品管理
+					<span></span>
+					商品列表
+					<span></span>
+					<em>添加商品</em>
+				</h2>
+				<!-- 添加步骤 -->
+				<ul class="select_com">
+					<li class="active">选择商品分类</li>
+					<li class="active">填写商品信息</li>
+					<li>选择商品关联</li>
+				</ul>
+				<!-- 基本信息 -->
+				<h2 class="basic_info">基本信息</h2>
+				<!-- 商品分类 -->
+				<h4 class="select_classify first_title">
+					<em>商品分类：</em>
+					<span class="first">洗衣</span>
+					<span>羽绒服清洗</span>
+					<img src="./img/modification.png" width="33" height="33">
+				</h4>
+				<!-- 商品货号 -->
+				<h5 class="detail_info">
+					<span class="small_title">商品货号：</span>
+					<input type="text" name="" class="detail_input">
+				</h5>
+				<p class="detail_txt">商家货号是指商家管理商品的编号，买家不可见，最多可输入20个字符，支持输入中文、字母、数字、_、/和小数点</p>
+				<!-- 商品名称 -->
+				<h5 class="detail_info">
+					<span class="small_title">商品名称：</span>
+					<input type="text" name="" class="detail_input">
+				</h5>
+				<p class="detail_txt">商品标题名称长度至少1个字符、最长150个汉字</p>
+				<!-- 商品简单描述 -->
+				<h4 class="select_classify first_title">
+					<em>商品简单描述：</em>
+					<textarea></textarea>
+				</h4>
+				<!-- 价格 -->
+				<h5 class="detail_info">
+					<span class="small_title">价格：</span>
+					<input type="text" name="" class="detail_input">
+				</h5>
+				<p class="detail_txt">价格必须是0.01-99999999之间的数字，且不能高于市场价，此价格为商品实际销售价格，如果商品存在规格，该价格显示最低价</p>
+				<!-- 折扣价 -->
+				<h5 class="detail_info">
+					<span class="small_title">折扣价：</span>
+					<input type="text" name="" class="detail_input discount_price">
+				</h5>
+				<!-- 上传商品图片 -->
+				<h5 class="detail_info">
+					<span class="small_title">上传商品图片：</span>
+					<input type="img" name="" class="detail_input">
+					<p class="detail_txt">上传图片</p>
+				</h5>
+				<!-- 基本信息2 -->
+				<h2 class="basic_info">基本信息</h2>
+				<!-- 基本要求 -->
+				<h4 class="select_classify first_title adjust">
+					<em>基本要求：</em>
+					<p class="desc">手机详情总体大小：图片+文字不超过20张，文字不超过5000字     <i>建议</i>：所有图片都是本宝贝相关都图片</p>
+				</h4>
+				<!-- 图片大小 -->
+				<h4 class="select_classify first_title adjust">
+					<em class="fl">图片大小：</em>
+					<p class="desc fl">1、建议使用宽度480-620像素，高度小于等于960像素的图片。2、 格式为：JPG/GIF/PNG<i>举例</i>：可以上传一张宽度为480,高度为960像素，格式为JPG的图片。</p>
+				</h4>
+				<!-- 文字要求 -->
+				<h4 class="select_classify first_title adjust">
+					<em>文字要求：</em>
+					<p class="desc">1、每次插入文字不能超过500个字，标点、特殊字符按照一个字计算。2、 请手动输入文字，不要复制粘贴网页上的文字，防止出现乱码。3、以下特殊字符"<" ">" "、" "/"会被替换为空。<i>建议</i>：不要添加太多的文字，这样看起来更清晰。</p>
+				</h4>
+				<img src="./img/addImgs.png" width="220" height="312" class="addImgs">
+				<!-- 文字描述 -->
+				<h5 class="detail_info">
+					<span class="small_titles">文字描述：</span>
+					<input type="text" name="" class="detail_input discount_price">
+				</h5>
+				<!-- 其他信息 -->
+				<h2 class="basic_info">其他信息</h2>
+				<!-- 上架 -->
+				<h5 class="detail_info putaway">
+					<span class="small_title">上架：</span>
+					<img src="./img/putaway.png" width="30" height="16">
+				</h5>
+				<!-- 商品关键词 -->
+				<h5 class="detail_info">
+					<span class="small_title">商品关键词：</span>
+					<input type="text" name="" class="detail_input">
+				</h5>
+				<p class="detail_txts">商品关键词请用空格分割</p>
+				<!-- 下一步 -->
+				<button>上一步,选择商品分类</button>
+				<button>下一步，选择商品关联</button>
+				<!-- 底部 -->
+				<div class="footer">
+					<span>©2015-2018 dscmall.cn&nbsp;&nbsp;</span>
+					<span>版权所有ICP备案号：</span>
+					<span>DSC00000249 POWERED</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/glyphicons-halflings-regular.eot">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/homePage.css">
+	<script type="text/javascript" src="./js/echarts.min.js"></script>
+</head>
+<body>
+	<!-- 首页 -->
+	<div class="homePage">
+		<!-- 首页左侧 -->
+		<div class="homePageL">
+			<img src="./img/logo.png">
+			<h2>晋彤商家管理系统</h2>
+		</div>
+		<!-- 首页右侧 -->
+		<div class="homePageR">
+			<!-- 导航 -->
+			<div class="r_nav">
+				<div class="r_nav_l">
+					<a href="#" class="active">首页</a>
+					<a href="#">商品管理</a>
+					<a href="#">订单管理</a>
+					<a href="#">店铺管理</a>
+					<a href="#">账户管理</a>
+					<a href="#">数据统计</a>
+				</div>
+				<div class="r_nav_r">
+					<a href="#">
+						<img src="./img/exit.png" width="17" height="19">
+						<span>退出</span>
+					</a>
+					<a href="#">
+						<img src="./img/clear.png" width="17" height="18">
+						<span>清除缓存</span>
+					</a>
+					<a href="#">
+						<img src="./img/admin.png">
+						<span>店长admin</span>
+					</a>
+				</div>
+			</div>
+			<!-- 店铺 -->
+			<div class="container">
+				<div class="store">
+					<div class="top">
+						<img src="./img/store.png">
+						<div class="store_des">
+							<h2>康洁洗衣旗舰店</h2>
+							<p><em>商家推荐：</em>灯具千种热销款式，厂家一站式供货，自由退换货。 专业人士上门安装，服务到家。</p>
+							<p><em>商家公告：</em>店铺新开张，2018.05.20-05.23所有商品8折优惠</p>
+						</div>
+						<div class="storeInfo">
+							<h2><span>商家</span>信息</h2>
+							<p><em>所属公司:</em>王卓生活用品有限公司</p>
+							<p><em>负责人:</em>店长admin</p>
+							<p><em>最后一次登录时间:</em>2018-05-29  09:16:36</p>
+						</div>
+					</div>
+					<div class="store_nav">
+						<a href="#">待处理订单（0）</a>
+						<a href="#">退换货订单（0）</a>
+						<a href="#">当前店铺活动（0）</a>
+						<a href="#">即将到期店铺活动（0）</a>
+						<a href="#">待处理回复评论（0）</a>
+					</div>
+				</div>
+				<!-- 今日情况 -->
+				<ul class="todayCon">
+					<li>
+						<h3>今日成交额</h3>
+						<h4>10,915.00</h4>
+						<p>
+							<span>昨日成交额</span>
+							<span>8,222.00</span>
+							<img src="./img/todayImg(1).png" width="14" height="14">
+							<span>11%</span>
+						</p>
+					</li>
+					<li>
+						<h3>今日成交量</h3>
+						<h4>1976</h4>
+						<p>
+							<span>今日成交量</span>
+							<span>8,222.00</span>
+							<img src="./img/todayImg(1).png" width="14" height="14">
+							<span>11%</span>
+						</p>
+					</li>
+					<li>
+						<h3>今日下单量</h3>
+						<h4>1990</h4>
+						<p>
+							<span>今日下单量</span>
+							<span>8,222.00</span>
+							<img src="./img/todayImg(2).png" width="14" height="14">
+							<span>11%</span>
+						</p>
+					</li>
+					<li>
+						<h3>今日退货量</h3>
+						<h4>30</h4>
+						<p>
+							<span>今日退货量</span>
+							<span>8,222.00</span>
+							<img src="./img/todayImg(3).png" width="14" height="14">
+							<span>11%</span>
+						</p>
+					</li>
+					<li>
+						<h3>今日点击量</h3>
+						<h4>3919</h4>
+						<p>
+							<span>今日点击量</span>
+							<span>8,222.00</span>
+							<img src="./img/todayImg(1).png" width="14" height="14">
+							<span>11%</span>
+						</p>
+					</li>
+				</ul>
+				<!-- 最近一周销售量趋势 -->
+				<div class="week_vol">
+					<div class="week_vol_title">
+						最近一周销售量趋势
+					</div>
+					<div class="week_vol_chart" id="main" style="width: 600px;height:400px;">
+						
+					</div>
+				</div>
+				<!-- 最近一周单品销量排名 -->
+				<div class="week_vol_sort">
+					<div class="week_vol_title">
+						最近一周单品销量排名
+						<a href="#"><span></span>按销售额排名</a>
+						<a href="#"><span><img src="./img/select.png"></span>按销售量排名</a>
+					</div>
+					<div class="container">
+						<table class="table">
+							<tr>
+								<td>排名</td>
+								<td>货号</td>
+								<td>商品名称</td>
+								<td>销售量（件）</td>
+								<td>销售额（元）</td>
+								<td>均价（元）</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>ECS00103</td>
+								<td>JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</td>
+								<td>1002</td>
+								<td>10,915</td>
+								<td>119.99</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="week_vol_sort_more">
+					<button>导出表格</button>
+					<div class="right">
+						<p>
+							<a href="#">
+								总计<span>206</span>记录
+							</a>
+							<a href="#">
+								分<span>82</span>页
+							</a>
+						</p>
+						<p>
+							<button>首页</button>
+							<span>&lt;</span>
+							<span>1</span>
+							<span>2</span>
+							<span class="active">3</span>
+							<span>4</span>
+							<span>5</span>
+							<span>&gt;</span>
+							<button>末页</button>
+						</p>
+					</div>
+				</div>
+				<!-- 首页底部 -->
+				<div class="footer">
+					<span>©2015-2018 dscmall.cn&nbsp;&nbsp;</span>
+					<span>版权所有ICP备案号：</span>
+					<span>DSC00000249 POWERED</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var myChart = echarts.init(document.getElementById('main'));
+	option = {
+	    tooltip: {
+	        trigger: 'axis'
+	    },
+	    toolbox: {
+	        show: true,
+	        feature: {
+	            dataZoom: {
+	                yAxisIndex: 'none'
+	            },
+	            dataView: {readOnly: false},
+	            magicType: {type: ['line', 'bar']},
+	            restore: {},
+	            saveAsImage: {}
+	        }
+	    },
+	    xAxis:  {
+	        type: 'category',
+	        boundaryGap: false,
+	        data: ['2018-05-23','2018-05-24','2018-05-25','2018-05-26','2018-05-27','2018-05-28','2018-05-29']
+	    },
+	    yAxis: {
+	        type: 'category',
+	        data: [0,250,500,750,1000,1250,1500]
+	    },
+	    series: [
+	        {
+	            name:'咨询（意向）',
+	            type:'line',
+	            data:[1000, 1500, 1375, 1375, 1250, 500, 333],
+	        },
+	        {
+	            name:'下单（预购）',
+	            type:'line',
+	            data:[83, 833, 750, 1250, 760, 250, 230],
+	        },
+	        {
+	            name:'成交',
+	            type:'line',
+	            data:[83, 833, 750, 1250, 760, 250, 230],
+	        }
+	    ]
+	};
+	myChart.setOption(option);
+</script>
+</html>

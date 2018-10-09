@@ -1,0 +1,332 @@
+/*商品列表*/
+.homePage {
+	width: 1300px;
+	height: 1549px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+/*商品列表左侧*/
+.homePageL {
+	float: left;
+	width: 167px;
+	height: 100%;
+	background-color: #1f262c;
+}
+.homePageL > img {
+	display: block;
+	width: 64px;
+	height: 53px;
+	background: url(../img/logo.png) no-repeat 0/cover;
+	margin: 18px auto 9px;
+}
+.homePageL h2 {
+	font-size: 15px;
+	color: #8a8e91;
+	text-align: center;
+}
+.homePageL > ul > li {
+	width: 100%;
+	height: 72px;
+	padding-left: 34px;
+	line-height: 72px;
+	font-size: 13px;
+	color: #fff;
+}
+.homePageL > ul > li.active {
+	border-left: 3px solid #32d794;
+}
+.homePageL > ul > li > img {
+	margin-right: 14px;
+}
+/*商品列表右测*/
+.homePageR {
+	float: right;
+	width: 1133px;
+	height: 100%;
+}
+.r_nav {
+	width: 100%;
+	height: 54px;
+	background-color: #eaf6ff;
+	padding: 0 76px 0 42px;
+}
+/*右边导航*/
+.r_nav_l {
+	float: left;
+	height: 100%;
+}
+.r_nav_l a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	width: 95px;
+	height: 100%;
+	text-align: center;
+	line-height: 54px;
+	color: #516676;
+	font-size: 14px;
+}
+.r_nav_l a.active {
+	background-color: #30a3fe;
+}
+.r_nav_r {
+	float: right;
+}
+.r_nav_r a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	display: block;
+	float: right;
+	height: 100%;
+	line-height: 54px;
+	font-size: 14px;
+}
+.r_nav_r a:first-child {
+	margin-left: 24px;
+}
+.r_nav_r a:nth-child(2) {
+	margin-left: 30px;
+}
+.r_nav_r a:first-child span {
+	color: #41b2fc;
+	margin-left: 8px;
+}
+.r_nav_r a:nth-child(2) span {
+	color: #32d796;
+	margin-left: 6px;
+}
+.r_nav_r a:last-child span {
+	color: #9aa9b5;
+}
+.r_nav_r a > img {
+	vertical-align: middle;
+}
+/*右边主要内容*/
+.container1 {
+	padding: 0 76px 0 42px;
+}
+.container1 > h2 {
+	font-size: 12px;
+	color: #516676;
+	line-height: 69px;
+}
+.container1 > h2 > span {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background-color: #29c99a;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 7px;
+	vertical-align: middle;
+}
+.container1 > h2 > em {
+	color: #30d366;
+}
+/*商品分类*/
+.classify {
+	font-size: 12px;
+	color: #a4adb5;
+}
+.classify .select {
+	display: inline-block;
+	width: 98px;
+	height: 28px;
+	background-color: #f3faff;
+	border: 2px solid #ebf6ff;
+	border-radius: 28px;
+	padding-left: 13px;
+	line-height: 28px;
+	margin-left: 14px;
+	margin-right: 41px;
+}
+.classify .all {
+	width: 83px;
+	padding-left: 19px;
+	margin-left: 13px;
+	margin-right: 40px;
+}
+.classify .select > img {
+	vertical-align: middle;
+}
+.classify input {
+	display: inline-block;
+	width: 115px;
+	height: 25px;
+	background-color: #f3faff;
+	border: 2px solid #ebf6ff;
+	border-radius: 25px;
+	text-align: center;
+	margin-left: 13px;
+	margin-right: 39px;
+}
+.classify input::-webkit-input-placeholder {
+	font-size: 12px;
+	color: #a4adb5;
+}
+.classify .input {
+	width: 163px;
+	margin-left: 13px;
+	margin-right: 41px;
+}
+.classify img {
+	vertical-align: middle;
+}
+.classify > button {
+	width: 112px;
+	height: 33px;
+	border-radius: 26px;
+	background-image: linear-gradient(to right,#37e06f,#32d69a);
+	font-size: 14px;
+	color: #fff;
+	box-shadow: 0 3px 14px #37df74;
+	border: none;
+	outline: none;
+	margin-left: 9px;
+}
+/*全部商品*/
+.all_com {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #30a2fe;
+}
+.all_com > a {
+	display: inline-block;
+	text-decoration: none;
+	line-height: 50px;
+	color: #30a2fe;
+	height: 100%;
+	font-size: 12px;
+}
+.all_com a.active {
+	border-bottom: 3px solid #30a2fe;
+}
+.all_com > a:nth-child(2) {
+	margin-left: 26px;
+	margin-right: 34px;
+}
+.all_com > a:last-child {
+	margin-left: 46px;
+}
+.container1 > .container > table.table >tbody >  tr > td.flex {
+	display: flex;
+	justify-content: space-between;
+}
+.week_vol_sort_more {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 102px;
+}
+.week_vol_sort_more > .left > img {
+	vertical-align: middle;
+}
+.week_vol_sort_more > .left >span {
+	font-size: 12px;
+	color: #82898e;
+}
+.week_vol_sort_more > .left button {
+	width: 89px;
+	height: 26px;
+	border-radius: 26px;
+	background-image: linear-gradient(to right,#37e06f,#32d69a);
+	font-size: 12px;
+	color: #fff;
+	box-shadow: 0 3px 14px #37df74;
+	border: none;
+	outline: none;
+}
+.week_vol_sort_more > .left > button.first{
+	background-image: linear-gradient(to right,#f95c2c,#fd5e52);
+	box-shadow: 0 3px 14px #fd634f;
+	margin-left: 54px;
+}
+.week_vol_sort_more > .left button.second {
+	margin: 0 17px;
+}
+.week_vol_sort_more > .left button.third {
+	background-image: linear-gradient(to right,#30b8fe,#30a3fe);
+	box-shadow: 0 3px 14px #3bacfe;
+}
+.week_vol_sort_more .right p {
+	line-height: 32px;
+}
+.week_vol_sort_more .right p:first-child {
+	text-align: right;
+}
+.week_vol_sort_more .right p:last-child {
+	display: flex;
+	justify-content: space-between;
+	width: 324px;
+}
+.week_vol_sort_more .right p:first-child > a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 13px;
+	color: #97a3ad;
+	margin-right: 28px;
+	vertical-align: middle;
+}
+.week_vol_sort_more .right p:first-child > a::before {
+	display: inline-block;
+	content: '';
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #3db0ff;
+}
+.week_vol_sort_more .right p:first-child > a.same::before {
+	background-color: #29c99a;
+}
+.week_vol_sort_more .right p:first-child > a:first-child > span {
+	color: #3db0ff;
+	font-size: 11px;
+}
+.week_vol_sort_more .right p:first-child > a.same > span {
+	color: #29c99a;
+	font-size: 11px;
+}
+.week_vol_sort_more .right p:last-child > button {
+	width: 56px;
+	height: 20px;
+	border-radius: 20px;
+	outline: none;
+	font-size: 11px;
+}
+.week_vol_sort_more .right p:last-child > button:first-child {
+	background-color: #edf8ff;
+	border: 1px solid #e7f5ff;
+	color: #41b2fc;
+}
+.week_vol_sort_more .right p:last-child > button:last-child {
+	background-color: #51b7fc;
+	border: 1px solid #3db0ff;
+	color: #fff;
+}
+.week_vol_sort_more .right p:last-child > span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 23px;
+	font-size: 10px;
+	color: #d3d5d7;
+}
+.week_vol_sort_more .right p:last-child > span.active{
+	width: 23px;
+	height: 23px;
+	background-color: #f3faff;
+	border-radius: 50%;
+	color: #65bffc;
+}
+/*底部*/
+.footer {
+	width: 100%;
+	height: 58px;
+	text-align: center;
+	line-height: 58px;
+	color: #d3d5d6;
+	font-size: 12px;
+	border-top: 1px solid #f5f5f6;
+}
